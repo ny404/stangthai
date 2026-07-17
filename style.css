@@ -81,6 +81,14 @@ body {
     text-align: center;
     background-color: var(--stang-yellow);
     border-bottom: 4px solid var(--dark-charcoal);
+    position: relative; /* Anchors the absolutely positioned edge images */
+    overflow: hidden;   /* Ensures the off-screen parts of the circles are cropped cleanly */
+}
+
+/* Ensure the text stays above the images */
+.hero-content {
+    position: relative;
+    z-index: 10;
 }
 
 .sub-heading {
@@ -116,6 +124,29 @@ body {
 .btn-outline-dark:hover {
     background: var(--dark-charcoal);
     color: var(--stang-yellow);
+}
+
+/* --- Hero Edge Images --- */
+.hero-edge-img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 8px solid var(--dark-charcoal);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.left-edge {
+    left: -150px; 
+    box-shadow: 15px 15px 0px var(--stang-red);
+}
+
+.right-edge {
+    right: -150px; 
+    box-shadow: -15px 15px 0px var(--stang-blue);
 }
 
 /* --- About Us Section --- */
@@ -300,9 +331,28 @@ body {
     background-color: var(--text-light);
 }
 
-/* Responsive adjustments */
+/* --- Responsive Adjustments --- */
+@media (max-width: 1200px) {
+    .hero-edge-img {
+        width: 300px;
+        height: 300px;
+    }
+    .left-edge { left: -100px; }
+    .right-edge { right: -100px; }
+}
+
 @media (max-width: 900px) {
     .about-grid { grid-template-columns: 1fr; }
     .main-heading { font-size: 4rem; }
-    .vertical-border-text { display: none; /* Hide vertical text on small mobile screens */ }
+    .vertical-border-text { display: none; }
+}
+
+@media (max-width: 768px) {
+    .hero-edge-img {
+        opacity: 0.15;
+        border: none;
+        box-shadow: none;
+    }
+    .left-edge { left: -50px; }
+    .right-edge { right: -50px; }
 }
