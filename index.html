@@ -19,12 +19,13 @@
             <ul class="nav-list left-list">
                 <li class="nav-item"><a href="menu.html">Menu</a></li>
                 <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
             
             <div class="spacer"></div> 
             
             <ul class="nav-list right-list">
-                <li class="nav-item"><a href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a href="#highlights">Highlights</a></li>
                 <li class="nav-item"><a href="https://stangthai.tsprodining.com/" class="btn-solid-red" target="_blank">Order Now</a></li>
             </ul>
         </div>
@@ -38,7 +39,6 @@
 
     <!-- Vibrant Full-Screen Hero Section -->
     <header class="hero" id="home">
-        <!-- Edge Photos -->
         <img src="pho-header.jpg" alt="Rich Vietnamese Pho Soup" class="hero-edge-img left-edge">
         
         <div class="hero-content">
@@ -47,7 +47,6 @@
             <a href="menu.html" class="btn-outline-dark">Explore The Menu</a>
         </div>
 
-        <!-- Edge Photos -->
         <img src="banhmi-header.jpg" alt="Crispy Banh Mi Sandwich" class="hero-edge-img right-edge">
     </header>
 
@@ -65,89 +64,301 @@
         </div>
     </section>
 
-    <!-- Visual Showcase Section -->
-    <section class="vibrant-showcase" id="gallery">
+    <!-- Highlight Slider Section -->
+    <section class="highlight-carousel-section" id="highlights" aria-label="Menu Highlights">
         
-        <!-- Left Panel -->
-        <div class="menu-panel menu-panel-red">
-            <div class="vertical-border-text vertical-border-left">
-                อิ่มอร่อยกับอาหารไทยรสชาติต้นตำรับ
-            </div>
-            <div class="panel-content">
-                <h2 class="panel-header">STANG THAI</h2>
-                <h3 class="panel-subheader">RICE & BANH MI</h3>
-                <div class="circular-image-wrapper">
-                    <img src="kra-pow-kaidao.jpg" alt="Kra Pow Kaidao" class="circle-food-img">
-                    <span class="gold-accent-text">โชคดี</span>
+        <!-- Centered Header -->
+        <div class="carousel-header">
+            <h2 class="panel-header" style="font-size: 3.5rem; margin: 0 auto;">MENU HIGHLIGHTS</h2>
+        </div>
+
+        <div class="carousel-container" aria-roledescription="carousel" aria-live="polite" id="menuCarousel">
+            <div class="carousel-track">
+                
+                <!-- Slide 1: Small Bite (Red) -->
+                <div class="carousel-slide menu-panel menu-panel-red" role="group" aria-roledescription="slide">
+                    <div class="vertical-border-text vertical-border-left">อิ่มอร่อยกับอาหารไทยรสชาติต้นตำรับ</div>
+                    <div class="panel-content">
+                        <h2 class="panel-header">SMALL BITE</h2>
+                        <h3 class="panel-subheader">QUICK & TASTY</h3>
+                        <div class="circular-image-wrapper">
+                            <img src="small-bite-highlight.jpg" alt="Duck Bao Bun" class="circle-food-img">
+                        </div>
+                        <div class="highlight-details mt-4">
+                            <span class="item-name" style="font-size: 1.5rem;">DUCK BAO BUN</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Center Panel -->
-        <div class="menu-panel menu-panel-blue">
-            <div class="panel-content">
-                <h2 class="panel-header">APPETIZERS</h2>
-                <ul class="appetizer-list">
-                    <li>
-                        <span class="item-name">CRISPY SHRIMP ROLLS (4PCS)</span>
-                        <span class="item-price">$7.95</span>
-                    </li>
-                    <li>
-                        <span class="item-name">STEAMED THAI DUMPLING (4PCS)</span>
-                        <span class="item-price">$9.95</span>
-                    </li>
-                    <li>
-                        <span class="item-name">CHICKEN BUNS (2PCS)</span>
-                        <span class="item-price">$7.95</span>
-                    </li>
-                    <li>
-                        <span class="item-name">VEGETABLE SPRING ROLLS</span>
-                        <span class="item-price">$7.95</span>
-                    </li>
-                </ul>
-                <a href="menu.html" class="btn-solid-gold mt-4">View Full Menu</a>
-            </div>
-        </div>
-
-        <!-- Right Panel -->
-        <div class="menu-panel menu-panel-pink">
-            <div class="vertical-border-text vertical-border-right">
-                ส้มตำรสเด็ดแซ่บถึงใจ
-            </div>
-            <div class="panel-content">
-                <h2 class="panel-header">SALAD</h2>
-                <div class="circular-image-wrapper small-circle">
-                    <img src="somtum-thai.jpg" alt="Somtum Thai" class="circle-food-img">
-                    <span class="gold-accent-text">แซ่บหลาย</span>
+                <!-- Slide 2: Salad (Blue) -->
+                <div class="carousel-slide menu-panel menu-panel-blue" role="group" aria-roledescription="slide">
+                    <div class="panel-content">
+                        <h2 class="panel-header">SALAD</h2>
+                        <h3 class="panel-subheader">FRESH & EXOTIC</h3>
+                        <div class="circular-image-wrapper">
+                            <img src="salad-highlight.jpg" alt="Larb Neua" class="circle-food-img">
+                            <span class="gold-accent-text">แซ่บหลาย</span>
+                        </div>
+                        <div class="highlight-details mt-4">
+                            <span class="item-name" style="font-size: 1.5rem;">LARB NEUA</span>
+                        </div>
+                    </div>
                 </div>
-                <ul class="appetizer-list mt-4">
-                    <li>
-                        <span class="item-name">SOMTUM THAI</span>
-                        <span class="item-price">$10.00</span>
-                    </li>
-                    <li>
-                        <span class="item-name">MANGO SALAD</span>
-                        <span class="item-price">$8.95</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
+                <!-- Slide 3: Banh Mi (Pink) -->
+                <div class="carousel-slide menu-panel menu-panel-pink" role="group" aria-roledescription="slide">
+                    <div class="vertical-border-text vertical-border-right">กรอบนอกนุ่มใน</div>
+                    <div class="panel-content">
+                        <h2 class="panel-header">BANH MI</h2>
+                        <h3 class="panel-subheader">CRISPY & FULL</h3>
+                        <div class="circular-image-wrapper">
+                            <img src="banhmi-header.jpg" alt="Classic Banh Mi" class="circle-food-img">
+                        </div>
+                        <div class="highlight-details mt-4">
+                            <span class="item-name" style="font-size: 1.5rem;">CLASSIC PORK BANH MI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Bowl (Red) -->
+                <div class="carousel-slide menu-panel menu-panel-red" role="group" aria-roledescription="slide">
+                    <div class="vertical-border-text vertical-border-left">น้ำซุปหอมหวานกลมกล่อม</div>
+                    <div class="panel-content">
+                        <h2 class="panel-header">BOWL</h2>
+                        <h3 class="panel-subheader">HEARTY & SLOW SIMMERED</h3>
+                        <div class="circular-image-wrapper">
+                            <img src="bowl-highlight.jpg" alt="Sukho Thai Noodle Soup" class="circle-food-img">
+                        </div>
+                        <div class="highlight-details mt-4">
+                            <span class="item-name" style="font-size: 1.5rem;">SUKHO THAI NOODLE SOUP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Rice Plate (Blue) -->
+                <div class="carousel-slide menu-panel menu-panel-blue" role="group" aria-roledescription="slide">
+                    <div class="panel-content">
+                        <h2 class="panel-header">RICE PLATE</h2>
+                        <h3 class="panel-subheader">WOK FIRED</h3>
+                        <div class="circular-image-wrapper">
+                            <img src="rice-highlight.jpg" alt="Kra Pow Kaidao" class="circle-food-img">
+                            <span class="gold-accent-text">โชคดี</span>
+                        </div>
+                        <div class="highlight-details mt-4">
+                            <span class="item-name" style="font-size: 1.5rem;">KRA POW KAIDAO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Noodle (Pink) -->
+                <div class="carousel-slide menu-panel menu-panel-pink" role="group" aria-roledescription="slide">
+                    <div class="vertical-border-text vertical-border-right">เส้นเหนียวนุ่มผัดซอสเข้มข้น</div>
+                    <div class="panel-content">
+                        <h2 class="panel-header">NOODLE</h2>
+                        <h3 class="panel-subheader">STREET STAPLES</h3>
+                        <div class="circular-image-wrapper">
+                            <img src="noodle-highlight.jpg" alt="Pad See Ew" class="circle-food-img">
+                        </div>
+                        <div class="highlight-details mt-4">
+                            <span class="item-name" style="font-size: 1.5rem;">PAD SEE EW</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Floating Controls & Button -->
+            <button class="carousel-btn prev-btn" aria-label="Previous Highlight" aria-controls="menuCarousel">&#10094;</button>
+            <button class="carousel-btn next-btn" aria-label="Next Highlight" aria-controls="menuCarousel">&#10095;</button>
+            
+            <a href="menu.html" class="btn-solid-gold floating-menu-btn">View Full Menu</a>
+            
+        </div>
     </section>
 
+    <!-- Word on the Street (Reviews) Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="reviews-header">
+            <h2 class="section-title-dark">WORD ON THE STREET</h2>
+            <p class="sub-heading">WHAT OUR NEIGHBORS ARE SAYING</p>
+        </div>
+
+        <div class="reviews-grid">
+            
+            <!-- Review 1: Pink Noodle Theme -->
+            <div class="review-card card-pink">
+                <span class="quote-mark">❝</span>
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"I’ve been looking for Khao Soi in Kensington how I like it, and this one was absolutely amazing. I can’t wait to try more here. They have a great variety and fair pricing."</p>
+                <p class="reviewer-name">- NICK K.</p>
+            </div>
+
+            <!-- Review 2: Paper & Yellow Theme (Staggered down) -->
+            <div class="review-card card-paper stagger-card">
+                <span class="quote-mark" style="color: var(--stang-yellow);">❝</span>
+                <div class="stars" style="color: var(--stang-blue);">★★★★★</div>
+                <p class="review-text">"I love the banh mis here. They're delicious and generously sized — perfect for a quick dinner, or if I get one for lunch, I always save the second half for a snack later. I love the chicken satay one, but the ground pork and crispy tofu are also good. The bread is crunchy on the outside and soft on the inside. Great Thai iced tea too."</p>
+                <p class="reviewer-name">- CHRISTINA D.</p>
+            </div>
+
+            <!-- Review 3: Red Star Anise Theme -->
+            <div class="review-card card-red">
+                <span class="quote-mark">❝</span>
+                <div class="stars">★★★★★</div>
+                <p class="review-text">"Great food (the Pad Thai was delicious!), amazing service, a really nice location with absolutely fair prices — walked by late at night and spontaneously decided to get dinner here and will definitely come back!"</p>
+                <p class="reviewer-name">- TIM</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Hours Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2 class="section-title-light">VISIT US</h2>
+                <p class="address-text">
+                    <strong>Stang Thai</strong><br>
+                    3019 Fort Hamilton Pkwy<br>
+                    Brooklyn, NY 11218<br>
+                    <a href="tel:7184366932">718-436-6932</a>
+                </p>
+
+                <h3 class="hours-title">BUSINESS HOURS</h3>
+                <ul class="hours-list" id="hoursList">
+                    <li data-day="0"><span>Sunday</span> <span>12:00 pm - 4:00 pm <br> 5:00 pm - 9:00 pm</span></li>
+                    <li data-day="1"><span>Monday</span> <span>Closed</span></li>
+                    <li data-day="2"><span>Tuesday</span> <span>11:30 am - 4:00 pm <br> 5:00 pm - 9:00 pm</span></li>
+                    <li data-day="3"><span>Wednesday</span> <span>11:30 am - 4:00 pm <br> 5:00 pm - 9:00 pm</span></li>
+                    <li data-day="4"><span>Thursday</span> <span>11:30 am - 4:00 pm <br> 5:00 pm - 9:00 pm</span></li>
+                    <li data-day="5"><span>Friday</span> <span>11:30 am - 4:00 pm <br> 5:00 pm - 9:30 pm</span></li>
+                    <li data-day="6"><span>Saturday</span> <span>12:00 pm - 4:00 pm <br> 5:00 pm - 9:30 pm</span></li>
+                </ul>
+            </div>
+            
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4716496229415!2d-73.9803273!3d40.6415494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b252277d13b%3A0x6b8db7eb4817a0de!2s3019%20Fort%20Hamilton%20Pkwy%2C%20Brooklyn%2C%20NY%2011218!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            
+            <div class="footer-brand">
+                <img src="Stang_Thai_2026_logo_cropped.png" alt="Stang Thai Logo" class="footer-logo">
+                <p class="footer-tagline">THAI SOUL.<br>VIETNAMESE HEART.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="footer-heading">EXPLORE</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact & Hours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4 class="footer-heading">CONNECT</h4>
+                <ul>
+                    <li><a href="#" target="_blank">Instagram</a></li>
+                    <li><a href="#" target="_blank">Facebook</a></li>
+                    <li><a href="#" target="_blank">TikTok</a></li>
+                </ul>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Stang Thai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Combined Scripts -->
     <script>
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            // --- Mobile Navigation Logic ---
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
 
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("active");
-            navMenu.classList.toggle("active");
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+
+            document.querySelectorAll(".nav-item a").forEach(n => n.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }));
+
+            // --- 3-Grid Carousel Logic ---
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track.children);
+            const nextButton = document.querySelector('.next-btn');
+            const prevButton = document.querySelector('.prev-btn');
+            const carouselContainer = document.querySelector('.carousel-container');
+            
+            let currentIndex = 0;
+            let slideInterval;
+            const slideDelay = 4000; 
+
+            const getSlidesToShow = () => window.innerWidth > 900 ? 3 : 1;
+
+            const updateCarousel = () => {
+                const slidesToShow = getSlidesToShow();
+                const maxIndex = slides.length - slidesToShow;
+                
+                if (currentIndex > maxIndex) currentIndex = maxIndex;
+                if (currentIndex < 0) currentIndex = 0;
+                
+                const containerWidth = carouselContainer.clientWidth;
+                const slideWidth = containerWidth / slidesToShow;
+                
+                slides.forEach((slide, i) => {
+                    slide.style.minWidth = `${slideWidth}px`;
+                    
+                    if (i >= currentIndex && i < currentIndex + slidesToShow) {
+                        slide.removeAttribute('aria-hidden');
+                    } else {
+                        slide.setAttribute('aria-hidden', 'true');
+                    }
+                });
+                
+                track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+            };
+
+            const nextSlide = () => {
+                const maxIndex = slides.length - getSlidesToShow();
+                currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+                updateCarousel();
+            };
+
+            const prevSlide = () => {
+                const maxIndex = slides.length - getSlidesToShow();
+                currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+                updateCarousel();
+            };
+
+            nextButton.addEventListener('click', nextSlide);
+            prevButton.addEventListener('click', prevSlide);
+            window.addEventListener('resize', updateCarousel);
+
+            const startSlide = () => { slideInterval = setInterval(nextSlide, slideDelay); };
+            const pauseSlide = () => { clearInterval(slideInterval); };
+
+            carouselContainer.addEventListener('mouseenter', pauseSlide);
+            carouselContainer.addEventListener('mouseleave', startSlide);
+            carouselContainer.addEventListener('focusin', pauseSlide);   
+            carouselContainer.addEventListener('focusout', startSlide);  
+
+            // Initialize
+            updateCarousel();
+            startSlide();
         });
-
-        document.querySelectorAll(".nav-item a").forEach(n => n.addEventListener("click", () => {
-            hamburger.classList.remove("active");
-            navMenu.classList.remove("active");
-        }));
     </script>
 </body>
 </html>
