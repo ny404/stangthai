@@ -228,8 +228,9 @@ body {
 .hero-edge-img {
     position: absolute;
     top: 50%;
-    width: clamp(300px, 45vw, 640px);
-    height: clamp(300px, 45vw, 640px);
+    /* Increased maximum scale to 1080px for high-res desktop displays */
+    width: clamp(300px, 45vw, 1080px);
+    height: clamp(300px, 45vw, 1080px);
     border-radius: 50%;
     border: 8px solid var(--dark-charcoal);
     object-fit: cover;
@@ -296,7 +297,6 @@ body {
     .sub-heading { font-size: 1rem; }
     
     .hero-edge-img { 
-        /* Massively scales up the image width while setting a max-cap so it doesn't break large tablets */
         width: clamp(280px, 85vw, 450px);
         height: clamp(280px, 85vw, 450px);
         opacity: 1;
@@ -304,7 +304,6 @@ body {
         z-index: 0; 
     }
     
-    /* Pushes 50% off the TOP edge while spanning wide */
     .left-edge { 
         top: 0;
         left: 50%; 
@@ -312,7 +311,6 @@ body {
         box-shadow: 10px 10px 0px var(--stang-red); 
     }
     
-    /* Pushes 50% off the BOTTOM edge while spanning wide */
     .right-edge { 
         top: 100%; 
         right: auto;
