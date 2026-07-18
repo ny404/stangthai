@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stang Thai | Thai Soul. Vietnamese Heart.</title>
-    <!-- Premium Font Pairings -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- Sticky Navigation -->
     <nav class="navbar">
-        <div class="nav-links left">
-            <a href="menu.html">Menu</a>
-            <a href="#about">About</a>
-        </div>
         <div class="logo-container">
             <img src="Stang_Thai_2026_logo_cropped.png" alt="Stang Thai Logo" class="brand-logo">
         </div>
-        <div class="nav-links right">
-            <a href="#gallery">Gallery</a>
-            <a href="https://stangthai.tsprodining.com/" class="btn-solid-red" target="_blank">Order Now</a>
+        
+        <div class="nav-menu">
+            <ul class="nav-list left-list">
+                <li class="nav-item"><a href="menu.html">Menu</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+            </ul>
+            
+            <div class="spacer"></div> 
+            
+            <ul class="nav-list right-list">
+                <li class="nav-item"><a href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a href="https://stangthai.tsprodining.com/" class="btn-solid-red" target="_blank">Order Now</a></li>
+            </ul>
+        </div>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </nav>
 
-    <!-- Vibrant Hero Section with Edge Framing -->
+    <!-- Vibrant Full-Screen Hero Section -->
     <header class="hero" id="home">
-        <!-- Left Edge Image: The Pho -->
-        <img src="pho-hero-edge.jpg" alt="Rich Vietnamese Pho Soup" class="hero-edge-img left-edge">
+        <!-- Edge Photos -->
+        <img src="pho-header.jpg" alt="Rich Vietnamese Pho Soup" class="hero-edge-img left-edge">
         
         <div class="hero-content">
             <h2 class="sub-heading">EST. 2019 • BROOKLYN, NY</h2>
@@ -36,8 +47,8 @@
             <a href="menu.html" class="btn-outline-dark">Explore The Menu</a>
         </div>
 
-        <!-- Right Edge Image: The Banh Mi Sandwich -->
-        <img src="banh-mi-hero-edge.jpg" alt="Crispy Banh Mi Sandwich" class="hero-edge-img right-edge">
+        <!-- Edge Photos -->
+        <img src="banhmi-header.jpg" alt="Crispy Banh Mi Sandwich" class="hero-edge-img right-edge">
     </header>
 
     <!-- About Us Section -->
@@ -54,19 +65,17 @@
         </div>
     </section>
 
-    <!-- Visual Showcase Section (Print Menu Inspired) -->
+    <!-- Visual Showcase Section -->
     <section class="vibrant-showcase" id="gallery">
         
-        <!-- Left Panel: Red & Yellow Theme -->
+        <!-- Left Panel -->
         <div class="menu-panel menu-panel-red">
             <div class="vertical-border-text vertical-border-left">
                 อิ่มอร่อยกับอาหารไทยรสชาติต้นตำรับ
             </div>
-            
             <div class="panel-content">
                 <h2 class="panel-header">STANG THAI</h2>
                 <h3 class="panel-subheader">RICE & BANH MI</h3>
-                
                 <div class="circular-image-wrapper">
                     <img src="kra-pow-kaidao.jpg" alt="Kra Pow Kaidao" class="circle-food-img">
                     <span class="gold-accent-text">โชคดี</span>
@@ -74,11 +83,10 @@
             </div>
         </div>
 
-        <!-- Center Panel: Deep Blue Theme (SVG Pattern Background) -->
+        <!-- Center Panel -->
         <div class="menu-panel menu-panel-blue">
             <div class="panel-content">
                 <h2 class="panel-header">APPETIZERS</h2>
-                
                 <ul class="appetizer-list">
                     <li>
                         <span class="item-name">CRISPY SHRIMP ROLLS (4PCS)</span>
@@ -101,20 +109,17 @@
             </div>
         </div>
 
-        <!-- Right Panel: Pink Theme -->
+        <!-- Right Panel -->
         <div class="menu-panel menu-panel-pink">
             <div class="vertical-border-text vertical-border-right">
                 ส้มตำรสเด็ดแซ่บถึงใจ
             </div>
-
             <div class="panel-content">
                 <h2 class="panel-header">SALAD</h2>
-                
                 <div class="circular-image-wrapper small-circle">
                     <img src="somtum-thai.jpg" alt="Somtum Thai" class="circle-food-img">
                     <span class="gold-accent-text">แซ่บหลาย</span>
                 </div>
-                
                 <ul class="appetizer-list mt-4">
                     <li>
                         <span class="item-name">SOMTUM THAI</span>
@@ -130,5 +135,19 @@
 
     </section>
 
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-item a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
 </body>
 </html>
